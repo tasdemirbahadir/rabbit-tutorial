@@ -53,7 +53,7 @@ public class MessageQueueConsumerIT {
     public static GenericContainer rabbit = new GenericContainer("rabbitmq:3-management")
             .withExposedPorts(5672, 15672);
 
-    @Value("${mq.user.update.queue-name}")
+    @Value("${mq.info.queue-name}")
     private String queueName;
 
     @Rule
