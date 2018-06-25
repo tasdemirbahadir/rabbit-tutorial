@@ -13,7 +13,7 @@ public class MessageQueueConsumer {
 
     @RabbitListener(queues = "${mq.info.queue-name}")
     public void consume(final UserQueueDto userQueueDto) {
-        logger.info("Consumed user data: {}", userQueueDto);
+        logger.debug("Consumed user data: {}", userQueueDto);
     }
 
 }
