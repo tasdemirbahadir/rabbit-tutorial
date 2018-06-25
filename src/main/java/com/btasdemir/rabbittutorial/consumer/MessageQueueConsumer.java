@@ -11,7 +11,7 @@ public class MessageQueueConsumer {
 
     private final static Logger logger = LoggerFactory.getLogger(MessageQueueConsumer.class);
 
-    @RabbitListener(queues = "${mq.user.update.queue-name}")
+    @RabbitListener(queues = "${mq.info.queue-name}")
     public void consume(final UserQueueDto userQueueDto) {
         logger.debug("Consumed user data: {}", userQueueDto);
     }

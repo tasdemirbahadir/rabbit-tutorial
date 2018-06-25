@@ -17,4 +17,4 @@ mq:
   info:
     exchange-name: localhost.exchange
     queue-name: localhost.queue
-    dead-letter-queue-name: localhost.queue.dead-letter
+    dead-letter-queue-name: user.update.dead-letter
