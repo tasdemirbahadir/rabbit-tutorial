@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: rabbit-tutorial
+  rabbitmq:
+    host: 127.0.0.1
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+          simple:
+            concurrency: 5
+            max-concurrency: 30
+            retry:
+              enabled: true
+
+mq:
+  info:
+    exchange-name: localhost.exchange
+    queue-name: localhost.queue
+    dead-letter-queue-name: localhost.queue.dead-letter
